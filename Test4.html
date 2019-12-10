@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T20 Match</title>
+</head>
+<body>
+<h1>Board of Control for Cricket in India (BCCI)</h1>
+<h3>Indian Team T20 Cricket Match Statistics</h3>
+<canvas id="myCanvas" width="500" height="400" style="border:2px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "15px Arial";
+ctx.lineWidth = 1.5;
+ctx.strokeText("Runs",1,40);
+ctx.strokeText("210-",0,70);
+ctx.strokeText("180-",0,120);
+ctx.strokeText("150-",0,170);
+ctx.strokeText("120-",0,220);
+ctx.strokeText("60  -",0,270);
+ctx.strokeText("30  -",0,320);
+ctx.strokeText("0    -",0,370);
+ctx.moveTo(30,400);
+ctx.lineTo(30,0);
+ctx.moveTo(0,370);
+ctx.lineTo(500,370);
+ctx.stroke();
+ctx.strokeText("|",120,390);
+ctx.strokeText("5",120,400);
+ctx.strokeText("|",220,390);
+ctx.strokeText("10",220,400);
+ctx.strokeText("|",320,390);
+ctx.strokeText("15",320,400);
+ctx.strokeText("Overs ->",390,390);
+ctx.moveTo(120, 303); //(5,40)
+ctx.lineTo(220, 245); //(10,75)
+ctx.moveTo(220, 245);
+ctx.lineTo(320, 187); //(15,140)
+ctx.stroke();
+</script>
+</body>
+</html>
